@@ -10,8 +10,8 @@
     max-width: 199px;
   }
   @include m(frame) {
-    width: 100%;
     @extend %center;
+    width: 100%;
     padding: em(15px);
     border: 1px solid $color-text;
   }
