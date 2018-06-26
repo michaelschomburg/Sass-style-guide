@@ -1,0 +1,28 @@
+// =========================================
+//  Mixins
+// =========================================
+
+@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null) {
+  display. $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+@mixin mq ($brk) {
+  @if $brk == 'sm' {
+    @media (max-width: $brk) {
+      @content;
+    }
+  }
+  @else if $brk == 'med' {
+    @media (max-width: $brk) {
+      @content;
+    }
+  }
+  @else $brk == 'lg' {
+    @media (max-width: $brk) {
+      @content;
+    }
+  }
+}

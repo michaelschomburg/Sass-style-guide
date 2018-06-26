@@ -15,14 +15,15 @@
     margin: em(30px) 0px;
     @include mq(medium) {
       @include flexy($dir: row, $just:space-between);
-  
+
     }
   }
   @include e(col) {
+    margin-bottom: em(50px);
     @include grid-color();
       @include mq(large) {
         @include g-columns();
-        margin-bottom: em(50px)
+        margin-bottom: em(50px);
       }
     }
 }
@@ -30,4 +31,5 @@
 [class^="grid__col--"]{
   float: left;
   justify-content: center;
+  margin-bottom: em(50px);
 }
