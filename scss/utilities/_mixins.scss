@@ -2,10 +2,10 @@
 //  Mixins
 // =========================================
 
-Flexbox
+// Flexbox
 
 @mixin flexy($disp: flex , $dir: null, $wrap: null, $just: null) {
-  display: $disp,
+  display: $disp;
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
@@ -45,7 +45,7 @@ Flexbox
   &--#{$modifier} {
     @content;
   }
-};
+}
 
 
 

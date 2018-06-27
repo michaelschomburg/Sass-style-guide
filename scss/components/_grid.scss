@@ -23,7 +23,6 @@
     @include grid-color();
       @include mq(large) {
         @include g-columns();
-        margin-bottom: em(50px);
       }
     }
 }
@@ -31,5 +30,5 @@
 [class^="grid__col--"]{
   float: left;
   justify-content: center;
-  margin-bottom: em(50px);
+  margin-bottom: em(20px);
 }
